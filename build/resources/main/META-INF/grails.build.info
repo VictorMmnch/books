@@ -1,0 +1,6 @@
+#Mon, 27 Aug 2018 09:41:40 -0500
+
+info.app.version=0.1
+info.app.name=books
+grails.env=development
+info.app.grailsVersion=3.3.5
