@@ -5,7 +5,11 @@ class BookController {
 	def bookService
 
     def index() {
-       render( view:'search',  model: [books:bookService.getBooksWithImage()])
+       render( view:'list',  model: [books:bookService.getBooksWithImage()])
+    }
+    
+    def showView(){
+    	render (view:'results', model:[books:[]])
     }
 
     def findByAuthorOrBookName(){

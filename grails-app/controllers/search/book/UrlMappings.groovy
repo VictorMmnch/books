@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/book/search", controller:'book', action:'index')
+        "/"(view:"/book/list", controller:'book', action:'index')
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
