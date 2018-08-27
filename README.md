@@ -9,5 +9,7 @@ corre con la base de datos H2 que Grails proporciona.
 
 Clonar proyecto o descargar .zip y entrar a raíz y ejecutar grails run-app.
 
+El archivo de creacion de base de datos está debajo de **src/main/scripts**
+
 
 
