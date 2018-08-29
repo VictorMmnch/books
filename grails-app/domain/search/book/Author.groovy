@@ -7,7 +7,8 @@ class Author {
     static hasMany = [books: Book]
 
     static mapping = {
-        
+        id generator: 'increment'
+        version false
     }
 
     static constraints = {

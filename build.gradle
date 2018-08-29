@@ -58,7 +58,10 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:2.47.1"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
-    runtime 'mysql:mysql-connector-java:5.1.40'
+    runtime 'mysql:mysql-connector-java:8.0.12'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    
+
 }
 
 bootRun {

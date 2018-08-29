@@ -91,20 +91,20 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    # driverClassName: com.mysql.jdbc.Driver
-    driverClassName: org.h2.Driver
-    # dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    username: sa
-    password: ''
+    driverClassName: com.mysql.jdbc.Driver
+    #driverClassName: org.h2.Driver
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    username: root
+    password: root
     
 
 environments:
     development:
         dataSource:
             logSql: true
-            dbCreate: create-drop
-            # url: jdbc:mysql://127.0.0.1:3306/books
-            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            dbCreate: validate
+            url: jdbc:mysql://127.0.0.1:3306/books?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+            # url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     test:
         dataSource:
             dbCreate: update
